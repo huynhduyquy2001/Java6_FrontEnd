@@ -2,7 +2,7 @@ body {
     color: black;
     font: 400 16px/24px Macan, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-family: 'Open Sans', sans-serif;
-
+background: #fff;
 }
 
 .logo {
@@ -46,13 +46,12 @@ header {
     margin-top: 0;
     color: rgba(90, 79, 72, 1);
     background-color: white;
-
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
 }
 
 label {
-    
-    font-weight: bolder;
+    color: black;
 }
 
 @keyframes showtop {
@@ -508,9 +507,6 @@ th {
 .nav-link:hover {
     color: black;
     cursor: pointer;
-    border-bottom: 1px solid black;
-    transform: translateY(-5px);
-
 }
 
 .nav-link {
@@ -774,7 +770,7 @@ input[type=email]:focus {
 
 .dropdown-item:focus,
 .dropdown-item:hover {
-    border-bottom: 1px solid #413026;
+    
     background-color: transparent;
     transform: translateY(-3px);
     cursor: pointer;
@@ -823,7 +819,7 @@ img:hover {
 }
 
 .nhan {
-    color: #313131;
+    color: #5d5d5d;
     font-family: monospace, 'Courier New', Courier;
     letter-spacing: 0.05em;
 }
@@ -909,22 +905,24 @@ label:hover {
 }
 
 .tooltip2-text {
-    display: none;
+    opacity: 0;
+    
     position: absolute;
     top: -10%;
     left: 100%;
     transform: translateX(-50%);
-    min-width: 250px;
+    min-width: 300px;
     padding: 10px;
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: left;
-
+    transition: opacity 0.3s ease;
 }
 
 .tooltip2:hover .tooltip2-text {
-    display: block;
+    
+    opacity: 1;
 }
 
 .tooltip2-text img {
@@ -1065,4 +1063,135 @@ span.psw {
     --color: #3498db;
     background-image:
         linear-gradient(to right, #3498db55, #22242F 30%);
+}
+
+.full-width {
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 22px 0 rgb(0 0 0 / 8%) !important;
+}
+.user-data {
+    text-align: center;
+}
+.user-profile {
+    
+    width: 100%;
+}
+.dpbg-1 {
+    /* background-image: url(images/beach.jpg) !important; */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.username-dt {
+    display: block;
+    width: 100%;
+    padding-top: 40px;
+}
+.user-main-details {
+    display: block;
+    width: 100%;
+    padding: 60px 0 22px 0;
+}
+.followers-dts {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    
+    display: flex;
+}
+.followers-dt-sm h4 {
+    color: #313131;
+    font-size: 12px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.followers-dt-sm span {
+    color: #847577;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+.profile-link {
+    display: block;
+    margin-bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.followers-dts li:nth-child(1) {
+    border-right: 1px solid #e6e6e6;
+}
+.followers-dts li {
+    Width: 50%;
+    text-align: center;
+}
+.usr-pic {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    margin-bottom: -48px;
+    display: inline-block;
+}
+.usr-pic > img {
+    float: none;
+    border: 4px solid #fff;
+    height: 100%;
+    border-radius: 100px;
+    width: 100%;
+    box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 10%);
+}
+
+img {
+    vertical-align: middle;
+}
+
+.sugguest-user {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.sugguest-user-dt {
+    display: block;
+    display: flex;
+}
+.sugguest-user-dt img {
+    flex: 0 0 auto;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    background-clip: content-box;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0px 2px 2px 0px rgb(0 0 0 / 10%);
+}
+.sugguest-user-dt a h4:hover {
+    color: #ff7555;
+}
+.sugguest-user-dt a h4 {
+    color: #313131 !important;
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.request-btn {
+    float: right;
+    border: 0;
+    background: #e4e6eb;
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    text-align: center;
+    color: #313131;
+    line-height: 36px;
+    padding: 2px 0;
 }
